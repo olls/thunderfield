@@ -16,6 +16,10 @@ h1 {
   font-family: 'Nixie One', cursive;
   text-indent: $side-margin * 1.2;
   margin-bottom: -.22em;
+
+  background: -webkit-linear-gradient(black, lighten($green, 5%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   
   font-size: 5vw;
   @media screen and (max-width: 700px) {
