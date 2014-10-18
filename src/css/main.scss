@@ -56,7 +56,44 @@ h1 {
   }
 }
 
+nav {
+  margin-bottom: 2em;
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  li {
+    margin: 0;
+    padding: 0;
+  }
+  li a {
+    text-align: center;
+    font-weight: 700;
+    text-decoration: none;
+
+    float: left;
+    width: 20%;
+    min-width: 120px;
+    padding: .2em;
+    border-radius: 3px;
+    transition: background .2s ease;
+    &:hover {
+      background-color: darken($green, 5%);
+    }
+  }
+  @media screen and (min-width: 1300px) {
+    li {
+      float: left;
+      width: auto;
+      padding: 0 1em;
+      &:first-of-type {
+        padding-left: 0;
+      }
+    }
+  }
   @extend .clearfix;
+}
+
 $border-width: 130;
 $border-top: 15;
 
