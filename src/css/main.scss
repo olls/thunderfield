@@ -40,12 +40,14 @@ $border-top: 15;
   border-width: ($side-margin * $border-top / $border-width) $side-margin;
   border-image: url(../imgs/border.png) $border-top $border-width repeat round;
 }
+
 // Don't go larger than image size, and line up title.
 @media screen and (min-width: #{$border-width * ($side-margin / 1vw)}px) { // 10vw / 1vw = 10
   h1 {
-    text-indent: #{$border-width}px;
+    text-indent: #{1.2 * $border-width}px;
   }
   .main {
+    padding: #{.2 * $border-width}px;
     border-width: #{$border-top}px #{$border-width}px;
   }
 }
