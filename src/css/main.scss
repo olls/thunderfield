@@ -1,0 +1,45 @@
+@import url(http://fonts.googleapis.com/css?family=Nixie+One|Bitter:400,700);
+
+$green: #195C29;
+$red: #B7251D;
+$yellow: #EACD07;
+$cream: #FBF4EC;
+
+$side-margin: 10vw;
+
+body {
+  background-color: $cream;
+  font-family: 'Bitter', serif;
+}
+
+h1 {
+  font-family: 'Nixie One', cursive;
+  text-indent: $side-margin * 1.2;
+  margin-bottom: -.22em;
+  
+  font-size: 5vw;
+  @media screen and (max-width: 700px) {
+    font-size: 10vw;
+  }
+  @media screen and (min-width: 701px) and (max-width: 1200px) {
+    font-size: 7vw;
+  }
+}
+
+.main {
+  @media screen and (min-width: 500px) and (max-width: 1400px) {
+    text-align: justify;
+  }
+  background-color: $green;
+  color: $cream;
+  padding: $side-margin * .2;
+  border-style: solid;
+  $border-width: 130;
+  $border-top: 15;
+  border-width: ($side-margin * $border-top / $border-width) $side-margin;
+  border-image: url(../imgs/border.png) $border-top $border-width repeat round;
+  // Don't go larger than image size:
+  @media screen and (min-width: #{$border-width * ($side-margin / 1vw)}px) { // 10vw / 1vw = 10
+    border-width: #{$border-top}px #{$border-width}px;
+  }
+}
