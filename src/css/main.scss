@@ -46,9 +46,11 @@ $border-top: 15;
   @media screen and (min-width: 500px) and (max-width: 1400px) {
     text-align: justify;
   }
+  > p, footer {
+    padding: 0 $side-margin * .2;
+  }
   background-color: $green;
   color: $cream;
-  padding: $side-margin * .2;
   border-style: solid;
   border-width: ($side-margin * $border-top / $border-width) $side-margin;
   border-image: url(../imgs/border.png) $border-top $border-width repeat round;
@@ -60,7 +62,37 @@ $border-top: 15;
     text-indent: #{1.2 * $border-width}px;
   }
   .main {
-    padding: #{.2 * $border-width}px;
+    > p, footer {
+      padding: 0 #{.2 * $border-width}px;
+    }
     border-width: #{$border-top}px #{$border-width}px;
+  }
+  footer {
+    margin-bottom: -#{$border-top}px !important;
+  }
+}
+
+footer {
+  background-color: darken($green, 10%);
+  margin-bottom: -($side-margin * $border-top / $border-width)+.1;
+  p {
+    // margin: 0;
+    display: inline-block;
+    float: left;
+  }
+  p:last-child {
+    float: right;
+  }
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+a {
+  color: darken($cream, 10%);
+  &:hover {
+    color: darken($cream, 5%);
   }
 }
