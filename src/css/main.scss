@@ -9,6 +9,12 @@ $cream: #FBF4EC;
 
 $side-margin: 10vw;
 
+.container {
+  margin: 10px;
+  margin: 1vw;
+  padding-top: .5em;
+}
+
 body {
   background-color: $cream;
   font-family: 'Bitter', serif;
@@ -17,6 +23,7 @@ body {
 h1 {
   font-family: 'Nixie One', cursive;
   text-indent: $side-margin * 1.2;
+  margin: 0;
   margin-bottom: -.22em;
 
   background: -webkit-linear-gradient(black, lighten($green, 5%));
