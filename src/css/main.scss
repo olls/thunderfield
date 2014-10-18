@@ -111,6 +111,13 @@ $border-top: 15;
   }
   img {
     float: left;
+    max-width: 100%;
+    @media screen and (max-width: 1000px) {
+      float: none !important;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
   img:nth-of-type(odd) {
     float: right;
