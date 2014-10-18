@@ -99,7 +99,7 @@ $border-width: 130;
 $border-top: 15;
 
 .main {
-  @media screen and (min-width: 500px) and (max-width: 1400px) {
+  @media screen and (min-width: 500px) {
     text-align: justify;
   }
   .content {
