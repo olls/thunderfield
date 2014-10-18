@@ -26,6 +26,9 @@ h1 {
   }
 }
 
+$border-width: 130;
+$border-top: 15;
+
 .main {
   @media screen and (min-width: 500px) and (max-width: 1400px) {
     text-align: justify;
@@ -34,12 +37,15 @@ h1 {
   color: $cream;
   padding: $side-margin * .2;
   border-style: solid;
-  $border-width: 130;
-  $border-top: 15;
   border-width: ($side-margin * $border-top / $border-width) $side-margin;
   border-image: url(../imgs/border.png) $border-top $border-width repeat round;
-  // Don't go larger than image size:
-  @media screen and (min-width: #{$border-width * ($side-margin / 1vw)}px) { // 10vw / 1vw = 10
+}
+// Don't go larger than image size, and line up title.
+@media screen and (min-width: #{$border-width * ($side-margin / 1vw)}px) { // 10vw / 1vw = 10
+  h1 {
+    text-indent: #{$border-width}px;
+  }
+  .main {
     border-width: #{$border-top}px #{$border-width}px;
   }
 }
