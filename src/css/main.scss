@@ -9,6 +9,15 @@ $cream: #FBF4EC;
 
 $side-margin: 10vw;
 
+
+.clearfix {
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
 .container {
   margin: 10px;
   margin: 1vw;
@@ -39,6 +48,7 @@ h1 {
   }
 }
 
+  @extend .clearfix;
 $border-width: 130;
 $border-top: 15;
 
@@ -73,6 +83,7 @@ $border-top: 15;
 }
 
 footer {
+  clear: both;
   background-color: darken($green, 10%);
   margin-bottom: -($side-margin * $border-top / $border-width)+.1;
   p {
@@ -83,11 +94,7 @@ footer {
   p:last-child {
     float: right;
   }
-  &:after {
-    content: '';
-    display: block;
-    clear: both;
-  }
+  @extend .clearfix;
 }
 
 a {
