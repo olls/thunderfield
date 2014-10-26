@@ -2,8 +2,8 @@
   "grunt": true,
   "hosts": {
     "vps87319": {
-      "output": "/var/www/oliverfaircliff.com/thunderfield",
-      "url": "http://oliverfaircliff.com/thunderfield"
+      "output": "/var/www/thunderfield-boat.co.uk",
+      "url": "http://thunderfield-boat.co.uk"
     }
   }
 }
