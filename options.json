@@ -4,6 +4,10 @@
     "vps87319": {
       "output": "/var/www/thunderfield-boat.co.uk",
       "url": "http://thunderfield-boat.co.uk"
+    },
+    "oliverfaircliff": {
+      "output": "/var/www/thunderfield-boat.co.uk",
+      "url": "http://thunderfield-boat.co.uk"
     }
   }
 }
