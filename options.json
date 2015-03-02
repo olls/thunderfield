@@ -1,5 +1,6 @@
 {
   "grunt": true,
+  "build_dir": "build",
   "hosts": {
     "oliverfaircliff": {
       "output": "/var/www/thunderfield-boat.co.uk",
