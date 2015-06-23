@@ -1,6 +1,9 @@
 {
   "name": "thunderfield",
   "version": "0.0.1",
+  "scripts": {
+    "build": "grunt"
+  },
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-contrib-uglify": "~0.2.2",

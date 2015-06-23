@@ -1,9 +1,9 @@
 {
-  "grunt": true,
-  "build_dir": "build",
+  "build_cmd": ["npm install", "npm run build"],
+  "copy_from": "build",
   "hosts": {
     "oliverfaircliff": {
-      "output": "/var/www/thunderfield-boat.co.uk",
+      "copy_to": "/var/www/thunderfield-boat.co.uk",
       "url": "http://thunderfield-boat.co.uk"
     }
   }
