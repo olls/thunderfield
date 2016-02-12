@@ -4,7 +4,7 @@
   "hosts": {
     "oliverfaircliff": {
       "copy_to": "/var/www/thunderfield-boat.co.uk",
-      "url": "http://thunderfield-boat.co.uk"
+      "url": "https://thunderfield-boat.co.uk"
     }
   }
 }
