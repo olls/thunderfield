@@ -7,7 +7,7 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     concat = require('gulp-concat'),
     sourcemaps = require('gulp-sourcemaps'),
-    minify = require('gulp-minify-css'),
+    cssnano = require('gulp-cssnano'),
     prefix = require('gulp-autoprefixer'),
     plumber = require('gulp-plumber');
 
@@ -16,7 +16,7 @@ gulp.task('css', function () {
   return gulp.src('./src/css/main.scss')
     .pipe(sass())
     .pipe(prefix())
-    .pipe(minify())
+    .pipe(cssnano())
     .pipe(rename('main.min.css'))
     .pipe(gulp.dest('./build/css/'));
 });
