@@ -3,7 +3,7 @@
   "repository": "https://github.com/olls/thunderfield",
   "version": "0.0.1",
   "scripts": {
-    "build": "gulp"
+    "build": "./node_modules/gulp/bin/gulp.js"
   },
   "devDependencies": {
     "gulp": "^3.9.0",
