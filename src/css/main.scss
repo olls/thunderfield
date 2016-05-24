@@ -1,5 +1,9 @@
 @import '../../node_modules/normalize-sass/normalize';
 
+$pswp__assets-path: '../imgs/default-skin/';
+@import '../../node_modules/photoswipe/src/css/main.scss';
+@import '../../node_modules/photoswipe/src/css/default-skin/default-skin.scss';
+
 @import url(https://fonts.googleapis.com/css?family=Nixie+One|Bitter:400,700);
 
 $green: #195C29;
@@ -106,24 +110,29 @@ $border-top: 15;
   }
   .content {
     margin-bottom: 2em;
+    padding: 0 1em;
     @extend .clearfix;
   }
   .content > p, footer, nav ul, img {
     padding: 0 $side-margin * .2;
   }
-  img {
-    float: left;
-    max-width: 100%;
-    @media screen and (max-width: 1000px) {
-      float: none !important;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
+  .gallery {
+    $bg: white;
+
   }
-  img:nth-of-type(odd) {
-    float: right;
-  }
+  // img {
+  //   float: left;
+  //   max-width: 100%;
+  //   @media screen and (max-width: 1000px) {
+  //     float: none !important;
+  //     display: block;
+  //     margin-left: auto;
+  //     margin-right: auto;
+  //   }
+  // }
+  // img:nth-of-type(odd) {
+  //   float: right;
+  // }
   background-color: $green;
   color: $cream;
   border-style: solid;
