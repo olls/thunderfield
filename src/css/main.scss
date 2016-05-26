@@ -41,6 +41,7 @@ html {
 body {
   background-color: $cream;
   font-family: 'Bitter', serif;
+  min-width: 230px;
 }
 
 h1 {
@@ -67,17 +68,20 @@ nav {
   ul {
     list-style: none;
     padding: 0;
+    text-align: center;
   }
   li {
     margin: 0;
-    padding: 0;
+    padding: 0 1em;
+    display: inline-block;
+    width: auto;
   }
   li a {
     text-align: center;
     font-weight: 700;
     text-decoration: none;
 
-    float: left;
+    display: inline-block;
     width: 20%;
     min-width: 120px;
     padding: .2em;
@@ -88,14 +92,14 @@ nav {
       background-color: darken($green, 5%);
     }
   }
-  @media screen and (min-width: 1300px) {
+  @media screen and (max-width: 400px) {
     li {
-      float: left;
-      width: auto;
-      padding: 0 1em;
-      &:first-of-type {
-        padding-left: 0;
-      }
+      padding: 0 5%;
+      width: 100%;
+    }
+    li a {
+      width: 100%;
+      min-width: none;
     }
   }
   @extend .clearfix;
