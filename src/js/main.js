@@ -95,6 +95,7 @@ function open_photoswipe(index, gallery_elem, disable_animation, from_url) {
   var options = {
     // define gallery index (for URL)
     galleryUID: GALLERY_INDEX,
+    loop: false,
 
     getThumbBoundsFn: function (index) {
       var rect = items[index].img_elem.getBoundingClientRect();
