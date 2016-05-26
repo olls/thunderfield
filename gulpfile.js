@@ -1,6 +1,5 @@
 var gulp = require('gulp'),
     livereload = require('gulp-livereload'),
-    processhtml = require('gulp-processhtml'),
     htmlmin = require('gulp-htmlmin'),
     uglify = require('gulp-uglify'),
     sass = require('gulp-sass'),
@@ -18,7 +17,6 @@ gulp.task('css', function () {
     .pipe(sass())
     .pipe(prefix())
     .pipe(cssnano())
-    .pipe(rename('main.min.css'))
     .pipe(gulp.dest('./build/css/'));
 });
 
@@ -58,7 +56,6 @@ gulp.task('js-dev', function () {
 
 gulp.task('html', function () {
   return gulp.src('./src/**/*.html')
-    .pipe(processhtml())
     .pipe(htmlmin({
       removeComments: true,
       collapseWhitespace: true,
