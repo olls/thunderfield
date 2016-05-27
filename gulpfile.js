@@ -76,7 +76,7 @@ gulp.task('html-dev', function () {
 gulp.task('img', function () {
   gulp.src('./node_modules/photoswipe/dist/default-skin/**/*', { base: './node_modules/photoswipe/dist' })
     .pipe(gulp.dest('./build/imgs/'));
-  gulp.src('./src/imgs/*')
+  gulp.src('./src/imgs/**/*', { base: './src/imgs' })
     .pipe(gulp.dest('./build/imgs/'));
 });
 
