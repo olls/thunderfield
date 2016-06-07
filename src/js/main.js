@@ -1,3 +1,5 @@
+require('./google');
+
 var PhotoSwipe = require('photoswipe');
 var PhotoSwipeUI_Default = require('../../node_modules/photoswipe/dist/photoswipe-ui-default.js');
 
